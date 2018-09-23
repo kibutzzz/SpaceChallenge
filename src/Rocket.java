@@ -2,12 +2,14 @@ public class Rocket implements SpaceShip {
 
     public int cost;
     public int weight;
-    public int maxWeight;
+    public int maxCargoWeight;
+    public int cargoWeight;
 
     public Rocket(int cost, int weight, int maxWeight){
         this.cost = cost;
         this.weight = weight;
-        this.maxWeight = maxWeight;
+        this.maxCargoWeight = maxWeight - weight;
+        this.cargoWeight = 0;
     }
 
     @Override
