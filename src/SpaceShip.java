@@ -1,7 +1,7 @@
 public interface SpaceShip {
 
     //retorna true caso o lançamento tenha sido efetuado com sucesso
-    boolean lauch();
+    boolean launch();
 
     //retorna true caso o pouso tenha sido efetuado com sucesso
     boolean land();
