@@ -13,7 +13,7 @@ public class Rocket implements SpaceShip {
     }
 
     @Override
-    public boolean lauch() {
+    public boolean launch() {
         return true;
     }
 
@@ -24,11 +24,11 @@ public class Rocket implements SpaceShip {
 
     @Override
     public boolean canCarry(Item item) {
-        return false;
+        return item.weight + this.cargoWeight < this.maxCargoWeight;
     }
 
     @Override
     public void carry(Item item) {
-
+        this.cargoWeight += cargoWeight;
     }
 }
